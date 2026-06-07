@@ -1,0 +1,68 @@
+:root {
+    --bg-color: #f4f7f6;
+    --outer-font-color: #333333;
+    --secondary-text-color: #777777;
+    --accent-color: #007bff;
+    --border-color: #dddddd;
+    --input-bg-color: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --outer-font-color: #e0e0e0;
+        --secondary-text-color: #a0a0a0;
+        --accent-color: #4CAF50;
+        --border-color: #444444;
+        --input-bg-color: #2c2c2c;
+    }
+}
+body {
+    background-color: var(--bg-color);
+    color: var(--outer-font-color);
+}
+header {
+    color: var(--outer-font-color);
+}
+main {
+    display: flex;
+    min-height: 100vh;
+    padding: 1vh;
+    gap: 1vh;
+}
+main div {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 1vh;
+}
+label,
+textarea {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+textarea,
+#output-area {
+    resize: none;
+    padding: 10px;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--input-bg-color);
+    color: var(--outer-font-color);
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--outer-font-color);
+}
+textarea::placeholder {
+    color: var(--secondary-text-color);
+}
+textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
