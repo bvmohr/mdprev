@@ -42,7 +42,7 @@ I use Markdown frequently and I needed a free, lightweight, previewer tool that 
 
 ## Usage
 
-Navigate to the hosted GitHub Page [here]() and start writing!
+Navigate to the hosted GitHub Page @ [mdprev](https://bvmohr.github.io/mdprev/) and start writing!
 
 ## Acknowledgements & AI Assistance
 
